@@ -1,0 +1,16 @@
+{
+	"name": "gluten-free-syracuse",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "sass assets/sass/style.scss:assets/css/style.css --watch",
+		"build": "sass assets/sass/style.scss:assets/css/style.css --style=compressed"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.82.0"
+	}
+}

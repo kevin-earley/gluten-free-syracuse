@@ -1,0 +1,27 @@
+#header {
+	display: flex;
+	align-items: center;
+	height: 10rem;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.logo {
+			position: relative;
+			top: -0.5rem;
+			width: 4.8rem;
+			margin-right: $space-md;
+		}
+
+		h1 a {
+			text-decoration: none;
+			color: $text-color;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 58.3333%;
+	box-sizing: border-box;
+
+	@include media('md') {
+		font-size: 62.5%;
+	}
+}
+
+body {
+	font-family: $font-family;
+	font-size: 1.7rem;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.6;
+	color: $text-color;
+	background-color: $gray-1;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 57.6rem;
+	margin: 0 auto;
+	padding-left: $space-lg;
+	padding-right: $space-lg;
+}
+
+.content {
+	margin-bottom: $space-xl;
+	padding-top: $space-lg;
+	padding-bottom: $space-xl;
+
+	p {
+		margin-bottom: $space-lg;
+	}
+}

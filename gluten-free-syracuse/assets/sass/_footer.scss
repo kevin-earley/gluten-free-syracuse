@@ -1,0 +1,36 @@
+#footer {
+	display: flex;
+	align-items: center;
+	height: 6rem;
+	font-size: 1.2rem;
+	text-align: center;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	a {
+		text-decoration: none;
+		color: $text-color;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.footer-menu {
+		#menu-footer-menu {
+			display: flex;
+			padding-left: 0;
+			list-style-type: none;
+
+			li {
+				margin: 0;
+				margin-left: $space-lg;
+			}
+		}
+	}
+}

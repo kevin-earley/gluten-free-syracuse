@@ -1,0 +1,68 @@
+button,
+input,
+select,
+textarea {
+	height: 4.5rem;
+	padding: $space-md $space-lg;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 500;
+	border: 1px solid $border-color;
+	border-radius: 10px;
+}
+
+#search {
+	width: 100%;
+	margin-bottom: $space-xs;
+
+	@include media('md') {
+		max-width: 28rem;
+		margin-bottom: 0;
+	}
+}
+
+.switch {
+	display: inline-block;
+	position: relative;
+	width: 4.5rem;
+	height: 2.55rem;
+	margin-right: $space-sm;
+
+	input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+
+		&:checked + .slider {
+			background-color: $primary-color;
+
+			&:before {
+				transform: translateX(1.95rem);
+			}
+		}
+	}
+
+	.slider {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: $gray-3;
+		border-radius: 2.55rem;
+		transition: 0.2s;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0.3rem;
+			bottom: 0.3rem;
+			width: 1.95rem;
+			height: 1.95rem;
+			background-color: $white;
+			border-radius: 50%;
+			transition: 0.2s;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.form-group {
+	width: 100%;
+	margin-bottom: $space-md;
+
+	label {
+		display: inline-block;
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin-bottom: $space-sm;
+	}
+
+	input,
+	select,
+	textarea {
+		width: 100%;
+		margin-bottom: $space-sm;
+		font-weight: 400;
+	}
+
+	textarea {
+		height: unset;
+	}
+}
+
+.wpcf7-not-valid-tip {
+	display: block;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: $error;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+	border-color: $success;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	border-color: $error;
+}
